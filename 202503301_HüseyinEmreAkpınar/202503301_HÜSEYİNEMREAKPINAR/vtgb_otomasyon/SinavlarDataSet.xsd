@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SinavlarDataSet" targetNamespace="http://tempuri.org/SinavlarDataSet.xsd" xmlns:mstns="http://tempuri.org/SinavlarDataSet.xsd" xmlns="http://tempuri.org/SinavlarDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="odevConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="odevConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.vtgb_otomasyon.Properties.Settings.GlobalReference.Default.odevConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sinav_takipTableAdapter" GeneratorDataComponentClassName="sinav_takipTableAdapter" Name="sinav_takip" UserDataComponentName="sinav_takipTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="odevConnectionString (Settings)" DbObjectName="odev.dbo.sinav_takip" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT sinav_no, ogr_adsoyad, ogr_no, sayisal_puan, esitagirlik_puan, sozel_puan FROM dbo.sinav_takip order by ogr_adsoyad</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sinav_no" DataSetColumn="sinav_no" />
+              <Mapping SourceColumn="ogr_adsoyad" DataSetColumn="ogr_adsoyad" />
+              <Mapping SourceColumn="ogr_no" DataSetColumn="ogr_no" />
+              <Mapping SourceColumn="sayisal_puan" DataSetColumn="sayisal_puan" />
+              <Mapping SourceColumn="esitagirlik_puan" DataSetColumn="esitagirlik_puan" />
+              <Mapping SourceColumn="sozel_puan" DataSetColumn="sozel_puan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SinavlarDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SinavlarDataSet" msprop:Generator_UserDSName="SinavlarDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sinav_takip" msprop:Generator_TableClassName="sinav_takipDataTable" msprop:Generator_TableVarName="tablesinav_takip" msprop:Generator_RowChangedName="sinav_takipRowChanged" msprop:Generator_TablePropName="sinav_takip" msprop:Generator_RowDeletingName="sinav_takipRowDeleting" msprop:Generator_RowChangingName="sinav_takipRowChanging" msprop:Generator_RowEvHandlerName="sinav_takipRowChangeEventHandler" msprop:Generator_RowDeletedName="sinav_takipRowDeleted" msprop:Generator_RowClassName="sinav_takipRow" msprop:Generator_UserTableName="sinav_takip" msprop:Generator_RowEvArgName="sinav_takipRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sinav_no" msprop:Generator_ColumnVarNameInTable="columnsinav_no" msprop:Generator_ColumnPropNameInRow="sinav_no" msprop:Generator_ColumnPropNameInTable="sinav_noColumn" msprop:Generator_UserColumnName="sinav_no" type="xs:int" />
+              <xs:element name="ogr_adsoyad" msprop:Generator_ColumnVarNameInTable="columnogr_adsoyad" msprop:Generator_ColumnPropNameInRow="ogr_adsoyad" msprop:Generator_ColumnPropNameInTable="ogr_adsoyadColumn" msprop:Generator_UserColumnName="ogr_adsoyad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_no" msprop:Generator_ColumnVarNameInTable="columnogr_no" msprop:Generator_ColumnPropNameInRow="ogr_no" msprop:Generator_ColumnPropNameInTable="ogr_noColumn" msprop:Generator_UserColumnName="ogr_no" type="xs:int" />
+              <xs:element name="sayisal_puan" msprop:Generator_ColumnVarNameInTable="columnsayisal_puan" msprop:Generator_ColumnPropNameInRow="sayisal_puan" msprop:Generator_ColumnPropNameInTable="sayisal_puanColumn" msprop:Generator_UserColumnName="sayisal_puan" type="xs:double" />
+              <xs:element name="esitagirlik_puan" msprop:Generator_ColumnVarNameInTable="columnesitagirlik_puan" msprop:Generator_ColumnPropNameInRow="esitagirlik_puan" msprop:Generator_ColumnPropNameInTable="esitagirlik_puanColumn" msprop:Generator_UserColumnName="esitagirlik_puan" type="xs:double" />
+              <xs:element name="sozel_puan" msprop:Generator_ColumnVarNameInTable="columnsozel_puan" msprop:Generator_ColumnPropNameInRow="sozel_puan" msprop:Generator_ColumnPropNameInTable="sozel_puanColumn" msprop:Generator_UserColumnName="sozel_puan" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
