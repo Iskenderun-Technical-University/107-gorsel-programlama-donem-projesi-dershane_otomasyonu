@@ -135,6 +135,7 @@ namespace _2022_2023_gorselodev
             this.button1.Text = "Öğrenci Bilgileri";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // anasayfa
             // 
@@ -153,6 +154,7 @@ namespace _2022_2023_gorselodev
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "anasayfa";
             this.Text = "anasayfa";
+            this.Load += new System.EventHandler(this.anasayfa_Load);
             this.ResumeLayout(false);
 
         }

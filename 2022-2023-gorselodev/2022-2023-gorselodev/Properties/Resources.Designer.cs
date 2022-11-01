@@ -73,6 +73,16 @@ namespace _2022_2023_gorselodev.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap giris_4 {
+            get {
+                object obj = ResourceManager.GetObject("giris 4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap kullanıcılar {
             get {
                 object obj = ResourceManager.GetObject("kullanıcılar", resourceCulture);
