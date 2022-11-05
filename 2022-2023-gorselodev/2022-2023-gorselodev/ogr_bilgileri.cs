@@ -154,5 +154,31 @@ namespace _2022_2023_gorselodev
             txtogrtelno.Clear();
             txtogremail.Clear();
         }
+
+        private void btnguncelle_Click(object sender, EventArgs e)
+        {
+
+            string sql = "Update ogr_bilgileri set ogr_tcno=@tc, ogr_adsoyad=@adsoyad, ogr_cinsiyet=@ogrcins, ogr_alan=@alan,veli_tcno=@velitc,veli_adsoyad=@veladsoyad,ogr_telefon=@ogrtel,ogr_eposta=@ogrposta where ogr_no='" + textBox1.Text + "'";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@tc", txtogrtcno.Text);
+            cmd.Parameters.AddWithValue("@adsoyad", txtogradsoyad.Text);
+            cmd.Parameters.AddWithValue("@alan", cmbalan.Text);
+            cmd.Parameters.AddWithValue("@velitc", txtvtcno.Text);
+            cmd.Parameters.AddWithValue("@veladsoyad", txtvadsoyad.Text);
+            cmd.Parameters.AddWithValue("@ogrtel", txtogrtelno.Text);
+            cmd.Parameters.AddWithValue("@ogrposta", txtogremail.Text);
+
+            if (radioButton1.Checked == true)
+            {
+                cmd.Parameters.AddWithValue("@ogrcins", radioButton1.Text);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@ogrcins", radioButton2.Text);
+            }
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+            MessageBox.Show("Öğrenci Güncellemesi Tamamlandı ");
+        }
     }
 }

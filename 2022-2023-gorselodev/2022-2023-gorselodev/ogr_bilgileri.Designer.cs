@@ -53,9 +53,10 @@ namespace _2022_2023_gorselodev
             this.label9 = new System.Windows.Forms.Label();
             this.txtogrtcno = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btntemizle = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
             this.btnekle = new System.Windows.Forms.Button();
-            this.btntemizle = new System.Windows.Forms.Button();
+            this.btnguncelle = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -334,6 +335,7 @@ namespace _2022_2023_gorselodev
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnguncelle);
             this.groupBox1.Controls.Add(this.btntemizle);
             this.groupBox1.Controls.Add(this.btnsil);
             this.groupBox1.Controls.Add(this.btnekle);
@@ -346,6 +348,16 @@ namespace _2022_2023_gorselodev
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İşlemler";
+            // 
+            // btntemizle
+            // 
+            this.btntemizle.Location = new System.Drawing.Point(28, 124);
+            this.btntemizle.Name = "btntemizle";
+            this.btntemizle.Size = new System.Drawing.Size(116, 39);
+            this.btntemizle.TabIndex = 7;
+            this.btntemizle.Text = "Temizle";
+            this.btntemizle.UseVisualStyleBackColor = true;
+            this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click);
             // 
             // btnsil
             // 
@@ -371,15 +383,16 @@ namespace _2022_2023_gorselodev
             this.btnekle.UseVisualStyleBackColor = true;
             this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
-            // btntemizle
+            // btnguncelle
             // 
-            this.btntemizle.Location = new System.Drawing.Point(28, 124);
-            this.btntemizle.Name = "btntemizle";
-            this.btntemizle.Size = new System.Drawing.Size(116, 39);
-            this.btntemizle.TabIndex = 7;
-            this.btntemizle.Text = "Temizle";
-            this.btntemizle.UseVisualStyleBackColor = true;
-            this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click);
+            this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnguncelle.Location = new System.Drawing.Point(28, 177);
+            this.btnguncelle.Name = "btnguncelle";
+            this.btnguncelle.Size = new System.Drawing.Size(116, 35);
+            this.btnguncelle.TabIndex = 8;
+            this.btnguncelle.Text = "Güncelle";
+            this.btnguncelle.UseVisualStyleBackColor = true;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // ogr_bilgileri
             // 
@@ -431,5 +444,6 @@ namespace _2022_2023_gorselodev
         private System.Windows.Forms.Button btnekle;
         private System.Windows.Forms.Button btnsil;
         private System.Windows.Forms.Button btntemizle;
+        private System.Windows.Forms.Button btnguncelle;
     }
 }
