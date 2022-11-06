@@ -10,3 +10,16 @@ C:\Users\B&E\source\repos\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\20
 C:\Users\B&E\source\repos\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.pdb
 C:\Users\B&E\source\repos\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.ogr_bilgileri.resources
 C:\Users\B&E\source\repos\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.giris.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\bin\Debug\2022-2023-gorselodev.exe.config
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\bin\Debug\2022-2023-gorselodev.exe
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\bin\Debug\2022-2023-gorselodev.pdb
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.csproj.AssemblyReference.cache
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.anasayfa.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.giris.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.ogr_bilgileri.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.Properties.Resources.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.veli_bilgiler.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.csproj.GenerateResource.cache
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.csproj.CoreCompileInputs.cache
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.exe
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.pdb
