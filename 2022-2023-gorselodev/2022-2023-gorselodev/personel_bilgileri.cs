@@ -168,6 +168,11 @@ namespace vtgb_otomasyon
             }
             Class1.GridDoldur(dataGridView1, sql);
         }
+
+        private void personel_bilgileri_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

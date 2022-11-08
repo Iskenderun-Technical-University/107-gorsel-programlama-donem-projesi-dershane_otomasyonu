@@ -365,7 +365,7 @@ namespace vtgb_otomasyon
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // personel_bilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -374,8 +374,9 @@ namespace vtgb_otomasyon
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "personel_bilgileri";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.personel_bilgileri_Load_1);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
