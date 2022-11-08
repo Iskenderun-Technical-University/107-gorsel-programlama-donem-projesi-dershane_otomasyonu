@@ -81,5 +81,45 @@ namespace _2022_2023_gorselodev
             // hes.Show();
             this.Hide();
         }
+        private void btnguncelle_Click(object sender, EventArgs e)
+        {
+            string sql = "Update veli_bilgileri set veli_tcno=@velitc, veli_adsoyad=@veliadsoyad, veli_yakinlik=@veliyakinlik, veli_isadresi=@veliadres,veli_telefon=@velitelefon,veli_mail=@velimail,kayit_ucreti=@kayitu where veli_id='" + textBox1.Text + "'";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@velitc", velitcno.Text);
+            cmd.Parameters.AddWithValue("@veliadsoyad", veliadsoyad.Text);
+            cmd.Parameters.AddWithValue("@veliyakinlik", veliyak.Text);
+            cmd.Parameters.AddWithValue("@veliadres", veliadres.Text);
+            cmd.Parameters.AddWithValue("@velitelefon", velitelefon.Text);
+            cmd.Parameters.AddWithValue("@velimail", velieposta.Text);
+            cmd.Parameters.AddWithValue("@kayitu", kayitucreti.Text);
+
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+            MessageBox.Show("Veli Güncellemesi Tamamlandı ");
+        }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            string sql1 = "DELETE FROM veli_bilgileri WHERE veli_id=@veli_id";
+            string parametre = "@veli_id";
+            string sql = "Select * from veli_bilgileri";
+            foreach (DataGridViewRow drow in dataGridView1.SelectedRows)
+            {
+                int id = Convert.ToInt32(drow.Cells[0].Value);
+                Class1.GridView_Delete(id, sql1, parametre);
+            }
+            Class1.GridDoldur(dataGridView1, sql);
+        }
+        private void btntemizle_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            velitcno.Clear();
+            veliadsoyad.Clear();
+            veliyak.Text = "";
+            veliadres.Clear();
+            velitelefon.Clear();
+            velieposta.Clear();
+            kayitucreti.Clear();
+        }
     }
 }
