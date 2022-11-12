@@ -121,5 +121,45 @@ namespace _2022_2023_gorselodev
             velieposta.Clear();
             kayitucreti.Clear();
         }
+        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            /* textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+             velitcno.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+             veliadsoyad.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+             veliyak.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+             veliadres.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+             velitelefon.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+             velieposta.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+             kayitucreti.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+             veliogrno.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+             con = new SqlConnection(SqlCon);
+             cmd = new SqlCommand();
+             cmd.CommandText = "select * from veli_bilgileri where veli_tcno='" + velitcno.Text + "'";
+             cmd.Connection = con;
+             cmd.CommandType = CommandType.Text;
+             con.Open();
+             dr = cmd.ExecuteReader();*/
+        }
+        private void search3_TextChanged(object sender, EventArgs e)
+        {
+            string sql = "select * from hesap_bilgileri where ogr_adsoyad like '%";
+            Class1.ara(dataGridView1, search3, sql);
+        }
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secim = dataGridView1.SelectedCells[0].RowIndex;
+            textBox1.Text = dataGridView1.Rows[secim].Cells[0].Value.ToString();
+            velitcno.Text = dataGridView1.Rows[secim].Cells[1].Value.ToString();
+            veliadsoyad.Text = dataGridView1.Rows[secim].Cells[2].Value.ToString();
+            veliyak.Text = dataGridView1.Rows[secim].Cells[3].Value.ToString();
+            veliadres.Text = dataGridView1.Rows[secim].Cells[4].Value.ToString();
+            velitelefon.Text = dataGridView1.Rows[secim].Cells[5].Value.ToString();
+            velieposta.Text = dataGridView1.Rows[secim].Cells[6].Value.ToString();
+            kayitucreti.Text = dataGridView1.Rows[secim].Cells[7].Value.ToString();
+            veliogrno.Text = dataGridView1.Rows[secim].Cells[8].Value.ToString();
+
+        }
+
+
     }
 }
