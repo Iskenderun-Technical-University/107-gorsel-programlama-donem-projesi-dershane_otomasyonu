@@ -56,5 +56,24 @@ namespace _2022_2023_gorselodev
             textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = "insert into tbl_login(kullanici, sifre, tarih) values (@user,@password,@tarih)";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@user", textBox2.Text);
+            cmd.Parameters.AddWithValue("@password", Class1.MD5Sifrele(textBox3.Text));
+            cmd.Parameters.AddWithValue("@tarih", DateTime.Parse(dateTimePicker1.Text));
+
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string sql = "delete from tbl_login where kullanici='" + textBox2.Text + "' and sifre='" + textBox3.Text + "' and kID=" + textBox1.Text;
+            Class1.KomutYolla(sql);
+            GridDoldur();
+        }
     }
 }
