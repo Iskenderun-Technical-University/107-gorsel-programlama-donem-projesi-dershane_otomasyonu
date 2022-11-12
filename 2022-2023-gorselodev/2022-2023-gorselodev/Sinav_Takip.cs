@@ -7,14 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace _2022_2023_gorselodev
 {
     public partial class Sinav_Takip : Form
     {
+        SqlConnection con;
+        SqlDataAdapter da;
+        SqlDataReader dr;
+        SqlCommand cmd;
+        DataSet ds;
+        public static string SqlCon = @"Data Source=DESKTOP-DN85P15\SQLEXPRESS;Initial Catalog=odev;Integrated Security=True";
+        void GridDoldur()
+        {
+            con = new SqlConnection(SqlCon);
+            da = new SqlDataAdapter("Select * from sinav_takip", con);
+            ds = new DataSet();
+            con.Open();
+            da.Fill(ds, "sinav_takip");
+
+            dataGridView1.DataSource = ds.Tables["sinav_takip"];
+            con.Close();
+        }
         public Sinav_Takip()
         {
             InitializeComponent();
+            if (Class1.BaglantiDurum())
+            {
+                // MessageBox.Show("Bağlantı Kuruldu");
+            }
         }
 
         private void Sinav_Takip_Load(object sender, EventArgs e)
@@ -57,6 +79,48 @@ namespace _2022_2023_gorselodev
             txtsayisal.Text = dataGridView1.Rows[secim].Cells[13].Value.ToString();
             txtesitagirlik.Text = dataGridView1.Rows[secim].Cells[14].Value.ToString();
             txtsozel.Text = dataGridView1.Rows[secim].Cells[15].Value.ToString();
+        }
+        private void btntemizle_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            txtsinavno.Clear();
+            txtadsoyad.Clear();
+            txtnumara.Clear();
+            txtturkce.Clear();
+            txtmat.Clear();
+            txtgeo.Clear();
+            txttarih.Clear();
+            txtcografya.Clear();
+            txtfelsefe.Clear();
+            txtfizik.Clear();
+            txtkimya.Clear();
+            txtbiyoloji.Clear();
+            txtsayisal.Clear();
+            txtesitagirlik.Clear();
+            txtsozel.Clear();
+        }
+        private void btnekle_Click(object sender, EventArgs e)
+        {
+            string sql = "insert into sinav_takip(sinav_no,ogr_adsoyad,ogr_no,turkce_neti,matematik_neti,geometri_neti,tarih_neti,cografya_neti,felsefe_neti,fizik_neti,kimya_neti,biyoloji_neti,sayisal_puan,esitagirlik_puan,sozel_puan) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8,@o9,@o10,@o11,@o12,@o13,@o14,@o15)";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@o1", txtsinavno.Text);
+            cmd.Parameters.AddWithValue("@o2", txtadsoyad.Text);
+            cmd.Parameters.AddWithValue("@o3", txtnumara.Text);
+            cmd.Parameters.AddWithValue("@o4", txtturkce.Text);
+            cmd.Parameters.AddWithValue("@o5", txtmat.Text);
+            cmd.Parameters.AddWithValue("@o6", txtgeo.Text);
+            cmd.Parameters.AddWithValue("@o7", txttarih.Text);
+            cmd.Parameters.AddWithValue("@o8", txtcografya.Text);
+            cmd.Parameters.AddWithValue("@o9", txtfelsefe.Text);
+            cmd.Parameters.AddWithValue("@o10", txtfizik.Text);
+            cmd.Parameters.AddWithValue("@o11", txtkimya.Text);
+            cmd.Parameters.AddWithValue("@o12", txtbiyoloji.Text);
+            cmd.Parameters.AddWithValue("@o13", txtsayisal.Text);
+            cmd.Parameters.AddWithValue("@o14", txtesitagirlik.Text);
+            cmd.Parameters.AddWithValue("@o15", txtsozel.Text);
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+
         }
     }
 }
