@@ -63,6 +63,7 @@ namespace _2022_2023_gorselodev
             this.button7.Text = "Sınav Listeleri";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button4
             // 
@@ -75,6 +76,7 @@ namespace _2022_2023_gorselodev
             this.button4.Text = "Veli Bilgileri";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -87,6 +89,7 @@ namespace _2022_2023_gorselodev
             this.button3.Text = "Personel Bilgileri";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
@@ -123,6 +126,7 @@ namespace _2022_2023_gorselodev
             this.button2.Text = "Sınav Takip";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

@@ -24,7 +24,7 @@ namespace _2022_2023_gorselodev
     static SqlDataReader dr;
     static System.Data.DataSet ds;
 
-    public static string SqlCon = @"Data Source=DESKTOP-DN85P15\SQLEXPRESS;Initial Catalog=odev;Integrated Security=True";
+    public static string SqlCon = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=odev;Integrated Security=True";
 
     public static bool BaglantiDurum()
     {

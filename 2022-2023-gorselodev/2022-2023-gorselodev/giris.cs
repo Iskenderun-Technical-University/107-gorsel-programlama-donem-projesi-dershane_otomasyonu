@@ -44,7 +44,7 @@ namespace _2022_2023_gorselodev
             string sorgu = "select * from tbl_login where kullanici=@kullanici and sifre=@pass";
             con = new SqlConnection(SqlCon);
             cmd = new SqlCommand();
-            cmd.CommandText = "SELECT kullanici FROM tbl_login where kullanici='" + textBox1.Text + "'";
+            cmd.CommandText = "SELECT kullanici FROM tbl_login where kullanici='"+textBox1.Text+"'";
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
             con.Open();
@@ -54,7 +54,7 @@ namespace _2022_2023_gorselodev
                 kullanici = dr[0].ToString(); ;
             }
             con.Close();
-            if (Class1.giriskont(sorgu, textBox1.Text, textBox2.Text))
+            if (Class1.giriskont(sorgu,textBox1.Text, textBox2.Text))
             {
                 kullanicimSession = textBox1.Text;
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace vtgb_otomasyon
+namespace _2022_2023_gorselodev
 {
     public partial class personel_bilgileri : Form
     {

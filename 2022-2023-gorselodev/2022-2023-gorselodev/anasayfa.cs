@@ -29,5 +29,31 @@ namespace _2022_2023_gorselodev
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            personel_bilgileri per = new personel_bilgileri();
+            per.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            veli_bilgiler vel = new veli_bilgiler();
+            vel.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Sinav_Takip gozlem = new Sinav_Takip();
+            gozlem.Show();
+        }
     }
 }

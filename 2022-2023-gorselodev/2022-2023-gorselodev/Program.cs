@@ -16,7 +16,7 @@ namespace _2022_2023_gorselodev
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new anasayfa());
+            Application.Run(new giris());
         }
     }
 }

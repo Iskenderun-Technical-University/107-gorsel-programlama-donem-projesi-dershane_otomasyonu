@@ -1,5 +1,5 @@
 ﻿
-namespace vtgb_otomasyon
+namespace _2022_2023_gorselodev
 {
     partial class personel_bilgileri
     {
