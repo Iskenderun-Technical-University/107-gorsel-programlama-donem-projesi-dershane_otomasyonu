@@ -79,7 +79,7 @@ namespace _2022_2023_gorselodev
             GridDoldur();
             // hesap_bilgileri hes = new hesap_bilgileri();
             // hes.Show();
-            this.Hide();
+            // this.Hide();
         }
         private void btnguncelle_Click(object sender, EventArgs e)
         {
@@ -138,7 +138,7 @@ namespace _2022_2023_gorselodev
              cmd.Connection = con;
              cmd.CommandType = CommandType.Text;
              con.Open();
-             dr = cmd.ExecuteReader();*/
+            dr = cmd.ExecuteReader(); */
         }
         private void search3_TextChanged(object sender, EventArgs e)
         {
