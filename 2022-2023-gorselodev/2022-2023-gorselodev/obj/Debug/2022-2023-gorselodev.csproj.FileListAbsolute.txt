@@ -36,7 +36,6 @@ C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-
 C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.exe
 C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.pdb
-C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\vtgb_otomasyon.personel_bilgileri.resources
 C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\vtgb_otomasyon.personel_bilgileri.resources
 C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.Sinav_Takip.resources
 C:\Users\user\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.Yardimci_Form.resources
@@ -62,3 +61,4 @@ C:\Users\B&E\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2
 C:\Users\B&E\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\bin\Debug\2022-2023-gorselodev.exe
 C:\Users\B&E\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\bin\Debug\2022-2023-gorselodev.pdb
 C:\Users\B&E\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.personel_bilgileri.resources
+C:\Users\ZEGO\Desktop\gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.personel_bilgileri.resources
