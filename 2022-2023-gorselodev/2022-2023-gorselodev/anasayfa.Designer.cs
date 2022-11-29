@@ -102,6 +102,7 @@ namespace _2022_2023_gorselodev
             this.button6.Text = "Kullanıcı Giriş İşlemleri";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 

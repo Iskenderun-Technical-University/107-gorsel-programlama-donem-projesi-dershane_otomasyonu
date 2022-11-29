@@ -75,5 +75,20 @@ namespace _2022_2023_gorselodev
             Class1.KomutYolla(sql);
             GridDoldur();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string sql = "update tbl_login set sifre='" + Class1.MD5Sifrele(textBox3.Text) + "' where kullanici='" + textBox2.Text + "' and kID=" + textBox1.Text;
+            Class1.KomutYolla(sql);
+            GridDoldur();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            dateTimePicker1.Value = DateTime.Now;
+        }
     }
 }

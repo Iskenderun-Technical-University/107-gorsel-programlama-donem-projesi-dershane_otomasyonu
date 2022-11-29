@@ -55,5 +55,12 @@ namespace _2022_2023_gorselodev
             Sinav_Takip gozlem = new Sinav_Takip();
             gozlem.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Yardimci_Form adus = new Yardimci_Form();
+            adus.Show();
+        }
     }
 }
