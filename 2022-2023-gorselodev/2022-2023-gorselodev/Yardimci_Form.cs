@@ -90,5 +90,12 @@ namespace _2022_2023_gorselodev
             textBox3.Clear();
             dateTimePicker1.Value = DateTime.Now;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SifreOlustur crypto = new SifreOlustur();
+            crypto.Show();
+        }
     }
 }

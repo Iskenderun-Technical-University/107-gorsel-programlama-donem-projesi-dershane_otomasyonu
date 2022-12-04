@@ -117,32 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Personel Bilgileri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Personel Bilgileri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="veli bilgileri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\veli bilgileri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cari hareketler(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cari hareketler(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kullanıcılar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kullanıcılar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giris 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giris 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ogrenci Bilgileri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ogrenci Bilgileri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SINAV LİSTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SINAV LİSTE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sinav takip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sinav takip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sifreolustur23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sifreolustur23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

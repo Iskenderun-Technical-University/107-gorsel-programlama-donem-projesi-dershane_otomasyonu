@@ -94,3 +94,4 @@ C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\20
 C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.csproj.CoreCompileInputs.cache
 C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.exe
 C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\2022-2023-gorselodev.pdb
+C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.SifreOlustur.resources

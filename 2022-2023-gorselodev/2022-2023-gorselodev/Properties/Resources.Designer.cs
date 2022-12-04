@@ -113,6 +113,16 @@ namespace _2022_2023_gorselodev.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap sifreolustur23 {
+            get {
+                object obj = ResourceManager.GetObject("sifreolustur23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap SINAV_LİSTE {
             get {
                 object obj = ResourceManager.GetObject("SINAV LİSTE", resourceCulture);
