@@ -122,5 +122,45 @@ namespace _2022_2023_gorselodev
             GridDoldur();
 
         }
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            string sql1 = "DELETE FROM sinav_takip WHERE sinav_id=@sinav_id";
+            string parametre = "@sinav_id";
+            string sql = "Select * from sinav_takip";
+            foreach (DataGridViewRow drow in dataGridView1.SelectedRows)
+            {
+                int id = Convert.ToInt32(drow.Cells[0].Value);
+                Class1.GridView_Delete(id, sql1, parametre);
+            }
+            Class1.GridDoldur(dataGridView1, sql);
+        }
+        private void Ara_TextChanged(object sender, EventArgs e)
+        {
+            string sql = "select * from sinav_takip where ogr_adsoyad like '%";
+            Class1.ara(dataGridView1, Ara, sql);
+        }
+        private void btnguncelle_Click(object sender, EventArgs e)
+        {
+            string sql = "Update sinav_takip set sinav_no=@sinavno, ogr_adsoyad=@ogradsoyad, ogr_no=@no, turkce_neti=@turkce,matematik_neti=@mat,geometri_neti=@geo,tarih_neti=@tarih,cografya_neti=@cog,felsefe_neti=@fel,fizik_neti=@fizik,kimya_neti=@kimya,biyoloji_neti=@biyo,sayisal_puan=@sayisal,esitagirlik_puan=@esit,sozel_puan=@sozel where sinav_id='" + textBox1.Text + "'";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@sinavno", txtsinavno.Text);
+            cmd.Parameters.AddWithValue("@ogradsoyad", txtadsoyad.Text);
+            cmd.Parameters.AddWithValue("@no", txtnumara.Text);
+            cmd.Parameters.AddWithValue("@turkce", txtturkce.Text);
+            cmd.Parameters.AddWithValue("@mat", txtmat.Text);
+            cmd.Parameters.AddWithValue("@geo", txtgeo.Text);
+            cmd.Parameters.AddWithValue("@tarih", txttarih.Text);
+            cmd.Parameters.AddWithValue("@cog", txtcografya.Text);
+            cmd.Parameters.AddWithValue("@fel", txtfelsefe.Text);
+            cmd.Parameters.AddWithValue("@fizik", txtfizik.Text);
+            cmd.Parameters.AddWithValue("@kimya", txtkimya.Text);
+            cmd.Parameters.AddWithValue("@biyo", txtbiyoloji.Text);
+            cmd.Parameters.AddWithValue("@sayisal", txtsayisal.Text);
+            cmd.Parameters.AddWithValue("@esit", txtesitagirlik.Text);
+            cmd.Parameters.AddWithValue("@sozel", txtsozel.Text);
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+            MessageBox.Show("Veli Güncellemesi Tamamlandı ");
+        }
     }
 }
