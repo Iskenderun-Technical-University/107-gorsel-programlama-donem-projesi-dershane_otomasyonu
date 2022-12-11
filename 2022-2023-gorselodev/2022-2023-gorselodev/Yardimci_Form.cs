@@ -97,5 +97,12 @@ namespace _2022_2023_gorselodev
             SifreOlustur crypto = new SifreOlustur();
             crypto.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SifreDegistir change = new SifreDegistir();
+            change.Show();
+        }
     }
 }

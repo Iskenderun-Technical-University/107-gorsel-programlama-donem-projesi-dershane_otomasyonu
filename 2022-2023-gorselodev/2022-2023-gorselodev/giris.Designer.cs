@@ -68,7 +68,7 @@ namespace _2022_2023_gorselodev
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(227, 22);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "123";
+            this.textBox2.Text = "1234";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
