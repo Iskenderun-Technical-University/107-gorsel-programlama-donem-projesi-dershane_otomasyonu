@@ -85,6 +85,12 @@
     <Compile Include="Sinav_Takip.Designer.cs">
       <DependentUpon>Sinav_Takip.cs</DependentUpon>
     </Compile>
+    <Compile Include="veli_bilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veli_bilgi.Designer.cs">
+      <DependentUpon>veli_bilgi.cs</DependentUpon>
+    </Compile>
     <Compile Include="veli_bilgiler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sinav_Takip.resx">
       <DependentUpon>Sinav_Takip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veli_bilgi.resx">
+      <DependentUpon>veli_bilgi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="veli_bilgiler.resx">
       <DependentUpon>veli_bilgiler.cs</DependentUpon>
