@@ -53,6 +53,12 @@
       <DependentUpon>anasayfa.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="hesap_bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesap_bilgileri.Designer.cs">
+      <DependentUpon>hesap_bilgileri.cs</DependentUpon>
+    </Compile>
     <Compile Include="personel_bilgileri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="anasayfa.resx">
       <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesap_bilgileri.resx">
+      <DependentUpon>hesap_bilgileri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="personel_bilgileri.resx">
       <DependentUpon>personel_bilgileri.cs</DependentUpon>
