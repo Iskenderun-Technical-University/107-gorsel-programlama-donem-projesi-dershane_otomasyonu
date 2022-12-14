@@ -91,6 +91,12 @@
     <Compile Include="SifreOlustur.Designer.cs">
       <DependentUpon>SifreOlustur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sinav_Listeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinav_Listeleri.Designer.cs">
+      <DependentUpon>Sinav_Listeleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sinav_Takip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SifreOlustur.resx">
       <DependentUpon>SifreOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinav_Listeleri.resx">
+      <DependentUpon>Sinav_Listeleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sinav_Takip.resx">
       <DependentUpon>Sinav_Takip.cs</DependentUpon>

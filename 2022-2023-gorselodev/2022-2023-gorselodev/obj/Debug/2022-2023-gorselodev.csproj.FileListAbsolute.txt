@@ -116,3 +116,6 @@ C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\20
 C:\Users\B&E\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.SifreDegistir.resources
 C:\Users\user\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.hesap_bilgileri.resources
 C:\Users\user\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.SifreDegistir.resources
+C:\Users\ZEGO\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.hesap_bilgileri.resources
+C:\Users\ZEGO\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.SifreDegistir.resources
+C:\Users\ZEGO\Desktop\107-gorsel-programlama-donem-projesi-dershane_otomasyonu\2022-2023-gorselodev\2022-2023-gorselodev\obj\Debug\_2022_2023_gorselodev.Sinav_Listeleri.resources
