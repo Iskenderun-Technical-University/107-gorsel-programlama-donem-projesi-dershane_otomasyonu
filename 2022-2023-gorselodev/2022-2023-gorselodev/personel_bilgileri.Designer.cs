@@ -67,9 +67,11 @@ namespace _2022_2023_gorselodev
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(67, 360);
+            this.groupBox3.Location = new System.Drawing.Point(71, 299);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1049, 208);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(787, 169);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıtlar";
@@ -78,11 +80,12 @@ namespace _2022_2023_gorselodev
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 26);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 21);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1043, 179);
+            this.dataGridView1.Size = new System.Drawing.Size(783, 146);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox2
@@ -108,9 +111,11 @@ namespace _2022_2023_gorselodev
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.pertcno);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(67, 23);
+            this.groupBox2.Location = new System.Drawing.Point(71, 25);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(825, 331);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(619, 269);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Personel Bilgileri";
@@ -119,42 +124,47 @@ namespace _2022_2023_gorselodev
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(57, 33);
+            this.label5.Location = new System.Drawing.Point(43, 27);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 23);
+            this.label5.Size = new System.Drawing.Size(53, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "Sıra No";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(163, 30);
+            this.textBox1.Location = new System.Drawing.Point(122, 24);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 30);
+            this.textBox1.Size = new System.Drawing.Size(144, 26);
             this.textBox1.TabIndex = 7;
             // 
             // Search
             // 
-            this.Search.Location = new System.Drawing.Point(162, 287);
+            this.Search.Location = new System.Drawing.Point(122, 233);
+            this.Search.Margin = new System.Windows.Forms.Padding(2);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(192, 30);
+            this.Search.Size = new System.Drawing.Size(145, 26);
             this.Search.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 290);
+            this.label1.Location = new System.Drawing.Point(78, 236);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 23);
+            this.label1.Size = new System.Drawing.Size(33, 19);
             this.label1.TabIndex = 5;
             this.label1.Text = "Ara";
             // 
             // peradres
             // 
             this.peradres.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.peradres.Location = new System.Drawing.Point(565, 24);
+            this.peradres.Location = new System.Drawing.Point(424, 20);
+            this.peradres.Margin = new System.Windows.Forms.Padding(2);
             this.peradres.Name = "peradres";
-            this.peradres.Size = new System.Drawing.Size(212, 96);
+            this.peradres.Size = new System.Drawing.Size(160, 79);
             this.peradres.TabIndex = 4;
             this.peradres.Text = "";
             // 
@@ -162,9 +172,10 @@ namespace _2022_2023_gorselodev
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(75, 229);
+            this.label4.Location = new System.Drawing.Point(56, 186);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 23);
+            this.label4.Size = new System.Drawing.Size(46, 19);
             this.label4.TabIndex = 0;
             this.label4.Text = "Görev";
             // 
@@ -172,9 +183,10 @@ namespace _2022_2023_gorselodev
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton1.Location = new System.Drawing.Point(52, 175);
+            this.radioButton1.Location = new System.Drawing.Point(39, 142);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 27);
+            this.radioButton1.Size = new System.Drawing.Size(60, 23);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Erkek";
@@ -195,18 +207,20 @@ namespace _2022_2023_gorselodev
             "Geometri",
             "Türk Dili Ve Edebiyatı",
             "Rehberlik"});
-            this.pergorev.Location = new System.Drawing.Point(162, 226);
+            this.pergorev.Location = new System.Drawing.Point(122, 184);
+            this.pergorev.Margin = new System.Windows.Forms.Padding(2);
             this.pergorev.Name = "pergorev";
-            this.pergorev.Size = new System.Drawing.Size(192, 31);
+            this.pergorev.Size = new System.Drawing.Size(145, 27);
             this.pergorev.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(478, 48);
+            this.label6.Location = new System.Drawing.Point(358, 39);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 23);
+            this.label6.Size = new System.Drawing.Size(44, 19);
             this.label6.TabIndex = 0;
             this.label6.Text = "Adres";
             // 
@@ -214,9 +228,10 @@ namespace _2022_2023_gorselodev
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton2.Location = new System.Drawing.Point(161, 174);
+            this.radioButton2.Location = new System.Drawing.Point(121, 141);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 27);
+            this.radioButton2.Size = new System.Drawing.Size(61, 23);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Kadın";
@@ -226,90 +241,100 @@ namespace _2022_2023_gorselodev
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(27, 80);
+            this.label2.Location = new System.Drawing.Point(20, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 23);
+            this.label2.Size = new System.Drawing.Size(93, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "T.C. Kimlik No";
             // 
             // pereposta
             // 
             this.pereposta.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.pereposta.Location = new System.Drawing.Point(565, 186);
+            this.pereposta.Location = new System.Drawing.Point(424, 151);
+            this.pereposta.Margin = new System.Windows.Forms.Padding(2);
             this.pereposta.Name = "pereposta";
-            this.pereposta.Size = new System.Drawing.Size(212, 30);
+            this.pereposta.Size = new System.Drawing.Size(160, 26);
             this.pereposta.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(48, 132);
+            this.label3.Location = new System.Drawing.Point(36, 107);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 23);
+            this.label3.Size = new System.Drawing.Size(67, 19);
             this.label3.TabIndex = 0;
             this.label3.Text = "Ad Soyad";
             // 
             // peradsoyad
             // 
             this.peradsoyad.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.peradsoyad.Location = new System.Drawing.Point(163, 126);
+            this.peradsoyad.Location = new System.Drawing.Point(122, 102);
+            this.peradsoyad.Margin = new System.Windows.Forms.Padding(2);
             this.peradsoyad.Name = "peradsoyad";
-            this.peradsoyad.Size = new System.Drawing.Size(192, 30);
+            this.peradsoyad.Size = new System.Drawing.Size(145, 26);
             this.peradsoyad.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(475, 129);
+            this.label7.Location = new System.Drawing.Point(356, 105);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 23);
+            this.label7.Size = new System.Drawing.Size(52, 19);
             this.label7.TabIndex = 0;
             this.label7.Text = "Telefon";
             // 
             // permaas
             // 
             this.permaas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.permaas.Location = new System.Drawing.Point(565, 239);
+            this.permaas.Location = new System.Drawing.Point(424, 194);
+            this.permaas.Margin = new System.Windows.Forms.Padding(2);
             this.permaas.Name = "permaas";
-            this.permaas.Size = new System.Drawing.Size(212, 30);
+            this.permaas.Size = new System.Drawing.Size(160, 26);
             this.permaas.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(478, 188);
+            this.label8.Location = new System.Drawing.Point(358, 153);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 23);
+            this.label8.Size = new System.Drawing.Size(50, 19);
             this.label8.TabIndex = 0;
             this.label8.Text = "Eposta";
             // 
             // pertelefon
             // 
             this.pertelefon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.pertelefon.Location = new System.Drawing.Point(565, 126);
+            this.pertelefon.Location = new System.Drawing.Point(424, 102);
+            this.pertelefon.Margin = new System.Windows.Forms.Padding(2);
             this.pertelefon.Name = "pertelefon";
-            this.pertelefon.Size = new System.Drawing.Size(212, 30);
+            this.pertelefon.Size = new System.Drawing.Size(160, 26);
             this.pertelefon.TabIndex = 1;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(489, 246);
+            this.label9.Location = new System.Drawing.Point(367, 200);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 23);
+            this.label9.Size = new System.Drawing.Size(42, 19);
             this.label9.TabIndex = 0;
             this.label9.Text = "Maaş";
             // 
             // pertcno
             // 
             this.pertcno.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.pertcno.Location = new System.Drawing.Point(163, 77);
+            this.pertcno.Location = new System.Drawing.Point(122, 63);
+            this.pertcno.Margin = new System.Windows.Forms.Padding(2);
             this.pertcno.Name = "pertcno";
-            this.pertcno.Size = new System.Drawing.Size(192, 30);
+            this.pertcno.Size = new System.Drawing.Size(145, 26);
             this.pertcno.TabIndex = 1;
             // 
             // groupBox1
@@ -319,18 +344,21 @@ namespace _2022_2023_gorselodev
             this.groupBox1.Controls.Add(this.btnekle);
             this.groupBox1.Controls.Add(this.btnguncelle);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(916, 41);
+            this.groupBox1.Location = new System.Drawing.Point(708, 40);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 277);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(150, 225);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İşlemler";
             // 
             // btntemizle
             // 
-            this.btntemizle.Location = new System.Drawing.Point(42, 208);
+            this.btntemizle.Location = new System.Drawing.Point(32, 169);
+            this.btntemizle.Margin = new System.Windows.Forms.Padding(2);
             this.btntemizle.Name = "btntemizle";
-            this.btntemizle.Size = new System.Drawing.Size(116, 39);
+            this.btntemizle.Size = new System.Drawing.Size(87, 32);
             this.btntemizle.TabIndex = 6;
             this.btntemizle.Text = "Temizle";
             this.btntemizle.UseVisualStyleBackColor = true;
@@ -338,9 +366,10 @@ namespace _2022_2023_gorselodev
             // btnsil
             // 
             this.btnsil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnsil.Location = new System.Drawing.Point(42, 155);
+            this.btnsil.Location = new System.Drawing.Point(32, 126);
+            this.btnsil.Margin = new System.Windows.Forms.Padding(2);
             this.btnsil.Name = "btnsil";
-            this.btnsil.Size = new System.Drawing.Size(116, 35);
+            this.btnsil.Size = new System.Drawing.Size(87, 28);
             this.btnsil.TabIndex = 5;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
@@ -348,9 +377,10 @@ namespace _2022_2023_gorselodev
             // btnekle
             // 
             this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnekle.Location = new System.Drawing.Point(42, 54);
+            this.btnekle.Location = new System.Drawing.Point(32, 44);
+            this.btnekle.Margin = new System.Windows.Forms.Padding(2);
             this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(116, 35);
+            this.btnekle.Size = new System.Drawing.Size(87, 28);
             this.btnekle.TabIndex = 5;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = true;
@@ -358,25 +388,26 @@ namespace _2022_2023_gorselodev
             // btnguncelle
             // 
             this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnguncelle.Location = new System.Drawing.Point(42, 96);
+            this.btnguncelle.Location = new System.Drawing.Point(32, 78);
+            this.btnguncelle.Margin = new System.Windows.Forms.Padding(2);
             this.btnguncelle.Name = "btnguncelle";
-            this.btnguncelle.Size = new System.Drawing.Size(116, 35);
+            this.btnguncelle.Size = new System.Drawing.Size(87, 28);
             this.btnguncelle.TabIndex = 5;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = true;
             // 
             // personel_bilgileri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(1238, 575);
+            this.ClientSize = new System.Drawing.Size(929, 492);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "personel_bilgileri";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.personel_bilgileri_Load_1);
+            this.Text = "personel_bilgileri";
+            this.Load += new System.EventHandler(this.personel_bilgileri_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);

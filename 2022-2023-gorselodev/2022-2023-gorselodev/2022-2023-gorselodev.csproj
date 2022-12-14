@@ -62,11 +62,10 @@
     <Compile Include="hesap_bilgileri.Designer.cs">
       <DependentUpon>hesap_bilgileri.cs</DependentUpon>
     </Compile>
-    <Compile Include="personel_bilgileri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="personel_bilgileri.Designer.cs">
-      <DependentUpon>personel_bilgileri.cs</DependentUpon>
+    <Compile Include="odevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="giris.cs">
       <SubType>Form</SubType>
@@ -79,6 +78,12 @@
     </Compile>
     <Compile Include="ogr_bilgileri.Designer.cs">
       <DependentUpon>ogr_bilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personel_bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personel_bilgileri.Designer.cs">
+      <DependentUpon>personel_bilgileri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,14 +135,14 @@
     <EmbeddedResource Include="hesap_bilgileri.resx">
       <DependentUpon>hesap_bilgileri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="personel_bilgileri.resx">
-      <DependentUpon>personel_bilgileri.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="giris.resx">
       <DependentUpon>giris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ogr_bilgileri.resx">
       <DependentUpon>ogr_bilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personel_bilgileri.resx">
+      <DependentUpon>personel_bilgileri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -170,6 +175,17 @@
     <EmbeddedResource Include="Yardimci_Form.resx">
       <DependentUpon>Yardimci_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="odevDataSet.xsc">
+      <DependentUpon>odevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet.xss">
+      <DependentUpon>odevDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

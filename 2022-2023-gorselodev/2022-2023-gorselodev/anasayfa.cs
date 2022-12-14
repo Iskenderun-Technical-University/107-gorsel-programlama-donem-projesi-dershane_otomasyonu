@@ -46,7 +46,9 @@ namespace _2022_2023_gorselodev
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Sinav_Listeleri liste = new Sinav_Listeleri();
+            liste.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -68,6 +70,13 @@ namespace _2022_2023_gorselodev
             this.Hide();
             veli_bilgi bilgi = new veli_bilgi();
             bilgi.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            hesap_bilgileri hesap = new hesap_bilgileri();
+            hesap.Show();
         }
     }
 }
