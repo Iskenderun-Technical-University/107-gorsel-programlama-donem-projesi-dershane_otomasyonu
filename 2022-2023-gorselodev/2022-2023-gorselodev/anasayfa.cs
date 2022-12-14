@@ -40,7 +40,7 @@ namespace _2022_2023_gorselodev
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            veli_bilgiler vel = new veli_bilgiler();
+            veli_bilgileri vel = new veli_bilgileri();
             vel.Show();
         }
 
@@ -61,6 +61,13 @@ namespace _2022_2023_gorselodev
             this.Hide();
             Yardimci_Form adus = new Yardimci_Form();
             adus.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            veli_bilgi bilgi = new veli_bilgi();
+            bilgi.Show();
         }
     }
 }

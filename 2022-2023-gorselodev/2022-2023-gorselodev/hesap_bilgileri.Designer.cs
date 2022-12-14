@@ -327,6 +327,7 @@ namespace _2022_2023_gorselodev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1201, 511);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

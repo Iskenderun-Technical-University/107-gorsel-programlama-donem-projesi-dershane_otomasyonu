@@ -8,18 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 namespace _2022_2023_gorselodev
 {
     public partial class Sinav_Listeleri : Form
     {
-        DataSet ds;
-
         public Sinav_Listeleri()
         {
             InitializeComponent();
         }
         string SqlCon = Class1.SqlCon;
+
+        private void Sinav_Listeleri_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (radioButton2.Checked == true)
@@ -90,14 +93,7 @@ namespace _2022_2023_gorselodev
                 MessageBox.Show("Arama Kriterlerini seçiniz");
             }
 
-            private void button2_Click(object sender, EventArgs e)
-            {
-                SinavRaporForm a = new SinavRaporForm();
-                a.kullanici = textBox1.Text;
-                a.ds = ds;
-                a.Show();
 
-            }
         }
     }
 }

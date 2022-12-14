@@ -51,6 +51,7 @@ namespace _2022_2023_gorselodev
             this.button8.Text = "Veli Bilgilendirme";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 

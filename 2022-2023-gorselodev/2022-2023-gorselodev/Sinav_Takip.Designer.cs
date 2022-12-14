@@ -385,7 +385,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(814, 527);
             this.dataGridView1.TabIndex = 39;
-           
             // 
             // btntemizle
             // 
@@ -431,6 +430,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1311, 726);
             this.Controls.Add(this.btntemizle);
             this.Controls.Add(this.btnekle);

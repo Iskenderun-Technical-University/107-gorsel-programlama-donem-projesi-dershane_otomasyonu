@@ -8,10 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 namespace _2022_2023_gorselodev
 {
-    public partial class veli_bilgiler : Form
+    public partial class veli_bilgileri : Form
     {
         SqlConnection con;
         SqlDataAdapter da;
@@ -30,7 +29,7 @@ namespace _2022_2023_gorselodev
             dataGridView1.DataSource = ds.Tables["veli_bilgileri"];
             con.Close();
         }
-        public veli_bilgiler()
+        public veli_bilgileri()
         {
             InitializeComponent();
             if (Class1.BaglantiDurum())
@@ -39,7 +38,7 @@ namespace _2022_2023_gorselodev
             }
         }
 
-        private void veli_bilgiler_Load(object sender, EventArgs e)
+        private void veli_bilgileri_Load(object sender, EventArgs e)
         {
             string veri = "select * from ogr_bilgileri where ogr_tcno='" + ogr_bilgileri.deger + "'";
             veliogrno.Text = Convert.ToString(Class1.IdDegeri(veri));
@@ -81,6 +80,19 @@ namespace _2022_2023_gorselodev
             hes.Show();
             this.Hide();
         }
+
+        private void btntemizle_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            velitcno.Clear();
+            veliadsoyad.Clear();
+            veliyak.Text = "";
+            veliadres.Clear();
+            velitelefon.Clear();
+            velieposta.Clear();
+            kayitucreti.Clear();
+        }
+
         private void btnguncelle_Click(object sender, EventArgs e)
         {
             string sql = "Update veli_bilgileri set veli_tcno=@velitc, veli_adsoyad=@veliadsoyad, veli_yakinlik=@veliyakinlik, veli_isadresi=@veliadres,veli_telefon=@velitelefon,veli_mail=@velimail,kayit_ucreti=@kayitu where veli_id='" + textBox1.Text + "'";
@@ -110,41 +122,12 @@ namespace _2022_2023_gorselodev
             }
             Class1.GridDoldur(dataGridView1, sql);
         }
-        private void btntemizle_Click(object sender, EventArgs e)
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            velitcno.Clear();
-            veliadsoyad.Clear();
-            veliyak.Text = "";
-            veliadres.Clear();
-            velitelefon.Clear();
-            velieposta.Clear();
-            kayitucreti.Clear();
+
         }
-        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            /* textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-             velitcno.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-             veliadsoyad.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-             veliyak.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-             veliadres.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-             velitelefon.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-             velieposta.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-             kayitucreti.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-             veliogrno.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-             con = new SqlConnection(SqlCon);
-             cmd = new SqlCommand();
-             cmd.CommandText = "select * from veli_bilgileri where veli_tcno='" + velitcno.Text + "'";
-             cmd.Connection = con;
-             cmd.CommandType = CommandType.Text;
-             con.Open();
-            dr = cmd.ExecuteReader(); */
-        }
-        private void search3_TextChanged(object sender, EventArgs e)
-        {
-            string sql = "select * from hesap_bilgileri where ogr_adsoyad like '%";
-            Class1.ara(dataGridView1, search3, sql);
-        }
+
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int secim = dataGridView1.SelectedCells[0].RowIndex;
@@ -159,7 +142,10 @@ namespace _2022_2023_gorselodev
             veliogrno.Text = dataGridView1.Rows[secim].Cells[8].Value.ToString();
 
         }
-
-
+        private void search3_TextChanged(object sender, EventArgs e)
+        {
+            string sql = "select * from hesap_bilgileri where ogr_adsoyad like '%";
+            Class1.ara(dataGridView1, search3, sql);
+        }
     }
 }
