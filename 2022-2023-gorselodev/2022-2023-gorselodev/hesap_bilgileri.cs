@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace _2022_2023_gorselodev
 {
@@ -82,6 +83,57 @@ namespace _2022_2023_gorselodev
                 }
                 Class1.GridDoldur(dataGridView1, sql);
             }
+        }
+        private void btntemizle_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            hesapogrno.Clear();
+            hesapogradsoyad.Clear();
+            datekayittarihi.Text = "";
+            ogrkayitucreti.Clear();
+            odenentutar.Clear();
+            odemetarihi.Text = "";
+            odeyenkisi.Clear();
+        }
+        private void btnekle_Click(object sender, EventArgs e)
+        {
+            string veri = "select * from ogr_bilgileri where ogr_tcno='" + ogr_bilgileri.deger + "'";
+            hesapogrno.Text = Convert.ToString(Class1.IdDegeri(veri));
+            hesapogradsoyad.Text = ogr_bilgileri.deger_3;
+            datekayittarihi.Text = ogr_bilgileri.deger_4;
+            ogrkayitucreti.Text = veli_bilgileri.deger_5;
+
+            string sql = "insert into hesap_bilgileri(ogr_no,ogr_adsoyad,ogr_kayittarihi,kayit_ucreti,odenen_tutar,odeme_tarihi,odeyen_kisi) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7)";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@o1", Class1.IdDegeri(veri));
+            cmd.Parameters.AddWithValue("@o2", ogr_bilgileri.deger_3);
+            cmd.Parameters.AddWithValue("@o3", ogr_bilgileri.deger_4);
+            cmd.Parameters.AddWithValue("@o4", veli_bilgileri.deger_5);
+            cmd.Parameters.AddWithValue("@o5", odenentutar.Text);
+            cmd.Parameters.AddWithValue("@o6", odemetarihi.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+            cmd.Parameters.AddWithValue("@o7", odeyenkisi.Text);
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+            MessageBox.Show("Kayıt İşlemi Tamamlandı ");
+            con.Close();
+
+        }
+        private void btnguncelle_Click(object sender, EventArgs e)
+        {
+            string sql = "Update hesap_bilgileri set odenen_tutar=@odenenpara, odeme_tarihi=@odemetarihi, odeyen_kisi=@odeyenkisi where odeme_id='" + textBox1.Text + "'";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@odenenpara", odenentutar.Text);
+            cmd.Parameters.AddWithValue("@odemetarihi", odemetarihi.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+            cmd.Parameters.AddWithValue("@odeyenkisi", odeyenkisi.Text);
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+            MessageBox.Show("Veli Güncellemesi Tamamlandı ");
+            con.Close();
+        }
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string sql = "select * from hesap_bilgileri where ogr_adsoyad like '%";
+            Class1.ara(dataGridView1, search2, sql);
         }
     }
 }
