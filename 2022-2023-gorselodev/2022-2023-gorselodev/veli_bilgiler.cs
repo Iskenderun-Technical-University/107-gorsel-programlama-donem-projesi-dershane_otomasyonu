@@ -77,9 +77,9 @@ namespace _2022_2023_gorselodev
             deger_5 = kayitucreti.Text;
             Class1.KomutYollaParametreli(sql, cmd);
             GridDoldur();
-            // hesap_bilgileri hes = new hesap_bilgileri();
-            // hes.Show();
-            // this.Hide();
+            hesap_bilgileri hes = new hesap_bilgileri();
+            hes.Show();
+            this.Hide();
         }
         private void btnguncelle_Click(object sender, EventArgs e)
         {
