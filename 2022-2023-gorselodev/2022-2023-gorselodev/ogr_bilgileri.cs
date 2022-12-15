@@ -157,7 +157,6 @@ namespace _2022_2023_gorselodev
 
         private void btnguncelle_Click(object sender, EventArgs e)
         {
-
             string sql = "Update ogr_bilgileri set ogr_tcno=@tc, ogr_adsoyad=@adsoyad, ogr_cinsiyet=@ogrcins, ogr_alan=@alan,veli_tcno=@velitc,veli_adsoyad=@veladsoyad,ogr_telefon=@ogrtel,ogr_eposta=@ogrposta where ogr_no='" + textBox1.Text + "'";
             cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@tc", txtogrtcno.Text);

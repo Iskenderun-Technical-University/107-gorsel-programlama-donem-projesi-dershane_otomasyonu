@@ -68,9 +68,9 @@ namespace _2022_2023_gorselodev
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(68, 281);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(787, 169);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
@@ -81,7 +81,7 @@ namespace _2022_2023_gorselodev
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 21);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -113,9 +113,9 @@ namespace _2022_2023_gorselodev
             this.groupBox2.Controls.Add(this.velitcno);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.Location = new System.Drawing.Point(68, 7);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(619, 269);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
@@ -135,7 +135,7 @@ namespace _2022_2023_gorselodev
             // veliogrno
             // 
             this.veliogrno.Location = new System.Drawing.Point(424, 233);
-            this.veliogrno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.veliogrno.Margin = new System.Windows.Forms.Padding(2);
             this.veliogrno.Name = "veliogrno";
             this.veliogrno.Size = new System.Drawing.Size(160, 26);
             this.veliogrno.TabIndex = 9;
@@ -155,7 +155,7 @@ namespace _2022_2023_gorselodev
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(122, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 26);
             this.textBox1.TabIndex = 7;
@@ -163,10 +163,11 @@ namespace _2022_2023_gorselodev
             // search3
             // 
             this.search3.Location = new System.Drawing.Point(122, 233);
-            this.search3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search3.Margin = new System.Windows.Forms.Padding(2);
             this.search3.Name = "search3";
             this.search3.Size = new System.Drawing.Size(145, 26);
             this.search3.TabIndex = 6;
+            this.search3.TextChanged += new System.EventHandler(this.search3_TextChanged_1);
             // 
             // label1
             // 
@@ -182,7 +183,7 @@ namespace _2022_2023_gorselodev
             // 
             this.veliadres.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.veliadres.Location = new System.Drawing.Point(424, 20);
-            this.veliadres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.veliadres.Margin = new System.Windows.Forms.Padding(2);
             this.veliadres.Name = "veliadres";
             this.veliadres.Size = new System.Drawing.Size(160, 79);
             this.veliadres.TabIndex = 4;
@@ -204,7 +205,7 @@ namespace _2022_2023_gorselodev
             this.veliyak.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.veliyak.FormattingEnabled = true;
             this.veliyak.Location = new System.Drawing.Point(122, 142);
-            this.veliyak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.veliyak.Margin = new System.Windows.Forms.Padding(2);
             this.veliyak.Name = "veliyak";
             this.veliyak.Size = new System.Drawing.Size(145, 27);
             this.veliyak.TabIndex = 3;
@@ -235,7 +236,7 @@ namespace _2022_2023_gorselodev
             // 
             this.velieposta.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.velieposta.Location = new System.Drawing.Point(424, 151);
-            this.velieposta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.velieposta.Margin = new System.Windows.Forms.Padding(2);
             this.velieposta.Name = "velieposta";
             this.velieposta.Size = new System.Drawing.Size(160, 26);
             this.velieposta.TabIndex = 1;
@@ -255,7 +256,7 @@ namespace _2022_2023_gorselodev
             // 
             this.veliadsoyad.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.veliadsoyad.Location = new System.Drawing.Point(122, 102);
-            this.veliadsoyad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.veliadsoyad.Margin = new System.Windows.Forms.Padding(2);
             this.veliadsoyad.Name = "veliadsoyad";
             this.veliadsoyad.Size = new System.Drawing.Size(145, 26);
             this.veliadsoyad.TabIndex = 1;
@@ -275,7 +276,7 @@ namespace _2022_2023_gorselodev
             // 
             this.kayitucreti.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kayitucreti.Location = new System.Drawing.Point(424, 194);
-            this.kayitucreti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kayitucreti.Margin = new System.Windows.Forms.Padding(2);
             this.kayitucreti.Name = "kayitucreti";
             this.kayitucreti.Size = new System.Drawing.Size(160, 26);
             this.kayitucreti.TabIndex = 1;
@@ -295,7 +296,7 @@ namespace _2022_2023_gorselodev
             // 
             this.velitelefon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.velitelefon.Location = new System.Drawing.Point(424, 107);
-            this.velitelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.velitelefon.Margin = new System.Windows.Forms.Padding(2);
             this.velitelefon.Name = "velitelefon";
             this.velitelefon.Size = new System.Drawing.Size(160, 26);
             this.velitelefon.TabIndex = 1;
@@ -314,8 +315,8 @@ namespace _2022_2023_gorselodev
             // velitcno
             // 
             this.velitcno.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.velitcno.Location = new System.Drawing.Point(122, 63);
-            this.velitcno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.velitcno.Location = new System.Drawing.Point(121, 65);
+            this.velitcno.Margin = new System.Windows.Forms.Padding(2);
             this.velitcno.Name = "velitcno";
             this.velitcno.Size = new System.Drawing.Size(145, 26);
             this.velitcno.TabIndex = 1;
@@ -328,9 +329,9 @@ namespace _2022_2023_gorselodev
             this.groupBox1.Controls.Add(this.btnguncelle);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(704, 22);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(150, 225);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
@@ -339,7 +340,7 @@ namespace _2022_2023_gorselodev
             // btntemizle
             // 
             this.btntemizle.Location = new System.Drawing.Point(32, 169);
-            this.btntemizle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btntemizle.Margin = new System.Windows.Forms.Padding(2);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(87, 32);
             this.btntemizle.TabIndex = 6;
@@ -351,7 +352,7 @@ namespace _2022_2023_gorselodev
             // 
             this.btnsil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnsil.Location = new System.Drawing.Point(32, 126);
-            this.btnsil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsil.Margin = new System.Windows.Forms.Padding(2);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(87, 28);
             this.btnsil.TabIndex = 5;
@@ -363,7 +364,7 @@ namespace _2022_2023_gorselodev
             // 
             this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnekle.Location = new System.Drawing.Point(32, 44);
-            this.btnekle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnekle.Margin = new System.Windows.Forms.Padding(2);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(87, 28);
             this.btnekle.TabIndex = 5;
@@ -375,7 +376,7 @@ namespace _2022_2023_gorselodev
             // 
             this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnguncelle.Location = new System.Drawing.Point(32, 78);
-            this.btnguncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnguncelle.Margin = new System.Windows.Forms.Padding(2);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(87, 28);
             this.btnguncelle.TabIndex = 5;
@@ -392,7 +393,7 @@ namespace _2022_2023_gorselodev
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "veli_bilgileri";
             this.Text = "veli_bilgileri";
             this.Load += new System.EventHandler(this.veli_bilgileri_Load);

@@ -18,7 +18,8 @@ namespace _2022_2023_gorselodev
         SqlDataReader dr;
         SqlCommand cmd;
         DataSet ds;
-        public static string SqlCon = @"Data Source=DESKTOP-DN85P15\SQLEXPRESS;Initial Catalog=odev;Integrated Security=True";
+        // public static string SqlCon = @"Data Source=DESKTOP-DN85P15\SQLEXPRESS;Initial Catalog=odev;Integrated Security=True";
+        string SqlCon = Class1.SqlCon;
         void GridDoldur()
         {
             con = new SqlConnection(SqlCon);

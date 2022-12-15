@@ -99,7 +99,15 @@ namespace _2022_2023_gorselodev
         {
             string sql = "Update veli_bilgileri set veli_tcno=@velitc, veli_adsoyad=@veliadsoyad, veli_yakinlik=@veliyakinlik, veli_isadresi=@veliadres,veli_telefon=@velitelefon,veli_mail=@velimail,kayit_ucreti=@kayitu where veli_id='" + textBox1.Text + "'";
             cmd = new SqlCommand();
+            if (velitcno.Text.Length < 11)
+            {
             cmd.Parameters.AddWithValue("@velitc", velitcno.Text);
+            }
+            else
+            {
+                MessageBox.Show("TCNO 11 rakamdan büyük olamaz!!");
+                cmd.Parameters.AddWithValue("@velitc", velitcno.Text.Substring(0,11));
+            }
             cmd.Parameters.AddWithValue("@veliadsoyad", veliadsoyad.Text);
             cmd.Parameters.AddWithValue("@veliyakinlik", veliyak.Text);
             cmd.Parameters.AddWithValue("@veliadres", veliadres.Text);
@@ -141,12 +149,12 @@ namespace _2022_2023_gorselodev
             veliogrno.Text = dataGridView1.Rows[secim].Cells[8].Value.ToString();
 
         }
-        private void search3_TextChanged(object sender, EventArgs e)
+        
+
+        private void search3_TextChanged_1(object sender, EventArgs e)
         {
-            string sql = "select * from hesap_bilgileri where ogr_adsoyad like '%";
+            string sql = "select * from veli_bilgileri where veli_adsoyad like '%";
             Class1.ara(dataGridView1, search3, sql);
         }
-
-
     }
 }
