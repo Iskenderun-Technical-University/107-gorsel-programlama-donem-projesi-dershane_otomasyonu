@@ -60,46 +60,9 @@ namespace _2022_2023_gorselodev
             dataGridView1.Columns[15].HeaderCell.Value = "Sözel Puan";
         }
 
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int secim = dataGridView1.SelectedCells[0].RowIndex;
-            textBox1.Text = dataGridView1.Rows[secim].Cells[0].Value.ToString();
-            txtsinavno.Text = dataGridView1.Rows[secim].Cells[1].Value.ToString();
-            txtadsoyad.Text = dataGridView1.Rows[secim].Cells[2].Value.ToString();
-            txtnumara.Text = dataGridView1.Rows[secim].Cells[3].Value.ToString();
-            txtturkce.Text = dataGridView1.Rows[secim].Cells[4].Value.ToString();
-            txtmat.Text = dataGridView1.Rows[secim].Cells[5].Value.ToString();
-            txtgeo.Text = dataGridView1.Rows[secim].Cells[6].Value.ToString();
-            txttarih.Text = dataGridView1.Rows[secim].Cells[7].Value.ToString();
-            txtcografya.Text = dataGridView1.Rows[secim].Cells[8].Value.ToString();
-            txtfelsefe.Text = dataGridView1.Rows[secim].Cells[9].Value.ToString();
-            txtfizik.Text = dataGridView1.Rows[secim].Cells[10].Value.ToString();
-            txtkimya.Text = dataGridView1.Rows[secim].Cells[11].Value.ToString();
-            txtbiyoloji.Text = dataGridView1.Rows[secim].Cells[12].Value.ToString();
-            txtsayisal.Text = dataGridView1.Rows[secim].Cells[13].Value.ToString();
-            txtesitagirlik.Text = dataGridView1.Rows[secim].Cells[14].Value.ToString();
-            txtsozel.Text = dataGridView1.Rows[secim].Cells[15].Value.ToString();
-        }
-        private void btntemizle_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            txtsinavno.Clear();
-            txtadsoyad.Clear();
-            txtnumara.Clear();
-            txtturkce.Clear();
-            txtmat.Clear();
-            txtgeo.Clear();
-            txttarih.Clear();
-            txtcografya.Clear();
-            txtfelsefe.Clear();
-            txtfizik.Clear();
-            txtkimya.Clear();
-            txtbiyoloji.Clear();
-            txtsayisal.Clear();
-            txtesitagirlik.Clear();
-            txtsozel.Clear();
-        }
-        private void btnekle_Click(object sender, EventArgs e)
+        
+
+        private void btnekle_Click_1(object sender, EventArgs e)
         {
             string sql = "insert into sinav_takip(sinav_no,ogr_adsoyad,ogr_no,turkce_neti,matematik_neti,geometri_neti,tarih_neti,cografya_neti,felsefe_neti,fizik_neti,kimya_neti,biyoloji_neti,sayisal_puan,esitagirlik_puan,sozel_puan) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8,@o9,@o10,@o11,@o12,@o13,@o14,@o15)";
             cmd = new SqlCommand();
@@ -120,26 +83,9 @@ namespace _2022_2023_gorselodev
             cmd.Parameters.AddWithValue("@o15", txtsozel.Text);
             Class1.KomutYollaParametreli(sql, cmd);
             GridDoldur();
+        }
 
-        }
-        private void btnsil_Click(object sender, EventArgs e)
-        {
-            string sql1 = "DELETE FROM sinav_takip WHERE sinav_id=@sinav_id";
-            string parametre = "@sinav_id";
-            string sql = "Select * from sinav_takip";
-            foreach (DataGridViewRow drow in dataGridView1.SelectedRows)
-            {
-                int id = Convert.ToInt32(drow.Cells[0].Value);
-                Class1.GridView_Delete(id, sql1, parametre);
-            }
-            Class1.GridDoldur(dataGridView1, sql);
-        }
-        private void Ara_TextChanged(object sender, EventArgs e)
-        {
-            string sql = "select * from sinav_takip where ogr_adsoyad like '%";
-            Class1.ara(dataGridView1, Ara, sql);
-        }
-        private void btnguncelle_Click(object sender, EventArgs e)
+        private void btnguncelle_Click_1(object sender, EventArgs e)
         {
             string sql = "Update sinav_takip set sinav_no=@sinavno, ogr_adsoyad=@ogradsoyad, ogr_no=@no, turkce_neti=@turkce,matematik_neti=@mat,geometri_neti=@geo,tarih_neti=@tarih,cografya_neti=@cog,felsefe_neti=@fel,fizik_neti=@fizik,kimya_neti=@kimya,biyoloji_neti=@biyo,sayisal_puan=@sayisal,esitagirlik_puan=@esit,sozel_puan=@sozel where sinav_id='" + textBox1.Text + "'";
             cmd = new SqlCommand();
@@ -161,6 +107,66 @@ namespace _2022_2023_gorselodev
             Class1.KomutYollaParametreli(sql, cmd);
             GridDoldur();
             MessageBox.Show("Veli Güncellemesi Tamamlandı ");
+        }
+
+        private void Ara_TextChanged_1(object sender, EventArgs e)
+        {
+            string sql = "select * from sinav_takip where ogr_adsoyad like '%";
+            Class1.ara(dataGridView1, Ara, sql);
+        }
+
+        private void btntemizle_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            txtsinavno.Clear();
+            txtadsoyad.Clear();
+            txtnumara.Clear();
+            txtturkce.Clear();
+            txtmat.Clear();
+            txtgeo.Clear();
+            txttarih.Clear();
+            txtcografya.Clear();
+            txtfelsefe.Clear();
+            txtfizik.Clear();
+            txtkimya.Clear();
+            txtbiyoloji.Clear();
+            txtsayisal.Clear();
+            txtesitagirlik.Clear();
+            txtsozel.Clear();
+        }
+
+        private void btnsil_Click_1(object sender, EventArgs e)
+        {
+            string sql1 = "DELETE FROM sinav_takip WHERE sinav_id=@sinav_id";
+            string parametre = "@sinav_id";
+            string sql = "Select * from sinav_takip";
+            foreach (DataGridViewRow drow in dataGridView1.SelectedRows)
+            {
+                int id = Convert.ToInt32(drow.Cells[0].Value);
+                Class1.GridView_Delete(id, sql1, parametre);
+            }
+            Class1.GridDoldur(dataGridView1, sql);
+        }
+
+        private void dataGridView1_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int secim = dataGridView1.SelectedCells[0].RowIndex;
+            textBox1.Text = dataGridView1.Rows[secim].Cells[0].Value.ToString();
+            txtsinavno.Text = dataGridView1.Rows[secim].Cells[1].Value.ToString();
+            txtadsoyad.Text = dataGridView1.Rows[secim].Cells[2].Value.ToString();
+            txtnumara.Text = dataGridView1.Rows[secim].Cells[3].Value.ToString();
+            txtturkce.Text = dataGridView1.Rows[secim].Cells[4].Value.ToString();
+            txtmat.Text = dataGridView1.Rows[secim].Cells[5].Value.ToString();
+            txtgeo.Text = dataGridView1.Rows[secim].Cells[6].Value.ToString();
+            txttarih.Text = dataGridView1.Rows[secim].Cells[7].Value.ToString();
+            txtcografya.Text = dataGridView1.Rows[secim].Cells[8].Value.ToString();
+            txtfelsefe.Text = dataGridView1.Rows[secim].Cells[9].Value.ToString();
+            txtfizik.Text = dataGridView1.Rows[secim].Cells[10].Value.ToString();
+            txtkimya.Text = dataGridView1.Rows[secim].Cells[11].Value.ToString();
+            txtbiyoloji.Text = dataGridView1.Rows[secim].Cells[12].Value.ToString();
+            txtsayisal.Text = dataGridView1.Rows[secim].Cells[13].Value.ToString();
+            txtesitagirlik.Text = dataGridView1.Rows[secim].Cells[14].Value.ToString();
+            txtsozel.Text = dataGridView1.Rows[secim].Cells[15].Value.ToString();
         }
     }
 }

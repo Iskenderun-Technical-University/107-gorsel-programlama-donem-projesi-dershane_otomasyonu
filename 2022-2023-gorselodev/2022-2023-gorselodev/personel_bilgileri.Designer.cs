@@ -87,6 +87,7 @@ namespace _2022_2023_gorselodev
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(783, 146);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // groupBox2
             // 
@@ -362,6 +363,7 @@ namespace _2022_2023_gorselodev
             this.btntemizle.TabIndex = 6;
             this.btntemizle.Text = "Temizle";
             this.btntemizle.UseVisualStyleBackColor = true;
+            this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click_1);
             // 
             // btnsil
             // 
@@ -373,6 +375,7 @@ namespace _2022_2023_gorselodev
             this.btnsil.TabIndex = 5;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click_1);
             // 
             // btnekle
             // 
@@ -384,6 +387,7 @@ namespace _2022_2023_gorselodev
             this.btnekle.TabIndex = 5;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = true;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click_1);
             // 
             // btnguncelle
             // 
@@ -395,6 +399,7 @@ namespace _2022_2023_gorselodev
             this.btnguncelle.TabIndex = 5;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = true;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click_1);
             // 
             // personel_bilgileri
             // 

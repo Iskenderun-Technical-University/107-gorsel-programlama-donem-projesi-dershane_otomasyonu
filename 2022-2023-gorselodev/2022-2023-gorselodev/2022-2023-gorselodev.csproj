@@ -73,6 +73,11 @@
     <Compile Include="giris.Designer.cs">
       <DependentUpon>giris.cs</DependentUpon>
     </Compile>
+    <Compile Include="odevDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>odevDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ogr_bilgileri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +190,17 @@
     </None>
     <None Include="odevDataSet.xss">
       <DependentUpon>odevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet11.xsc">
+      <DependentUpon>odevDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="odevDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>odevDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="odevDataSet11.xss">
+      <DependentUpon>odevDataSet11.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

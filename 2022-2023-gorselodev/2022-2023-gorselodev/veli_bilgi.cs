@@ -42,7 +42,8 @@ namespace _2022_2023_gorselodev
             con.Close();
         }
         public string sqlsorgu;
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
             {

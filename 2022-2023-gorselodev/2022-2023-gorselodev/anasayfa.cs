@@ -20,9 +20,9 @@ namespace _2022_2023_gorselodev
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ogr_bilgileri ogr = new ogr_bilgileri();
-            ogr.Show();
+            this.Hide(); // açık olan formu kapamasını istedik
+            ogr_bilgileri ogr = new ogr_bilgileri(); // yeni bir form nesnesi türettik
+            ogr.Show();  // o nesneyi açmasını istedik
         }
 
         private void anasayfa_Load(object sender, EventArgs e)

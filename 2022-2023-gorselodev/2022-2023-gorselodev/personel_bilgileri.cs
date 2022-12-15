@@ -13,10 +13,10 @@ namespace _2022_2023_gorselodev
 {
     public partial class personel_bilgileri : Form
     {
-        SqlConnection con;
-        SqlDataAdapter da;
-        SqlDataReader dr;
-        SqlCommand cmd;
+        SqlConnection con; // Sql bağlantısı
+        SqlDataAdapter da;  // Sql veri alma ve kaydetme 
+        SqlDataReader dr;  // verileri okur
+        SqlCommand cmd; // veri kaynağını kendisi  ile ilişkilendirmemizi saglayan yapı
         DataSet ds;
         string SqlCon = Class1.SqlCon;
 
@@ -61,57 +61,9 @@ namespace _2022_2023_gorselodev
 
         }
 
-        private void btnekle_Click(object sender, EventArgs e)
-        {
-            string sql = "insert into personel_bilgileri(per_tcno,per_adsoyad,per_cinsiyet,per_gorev,per_adres,per_telefon,per_eposta,maas) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8)";
-            cmd = new SqlCommand();
-            cmd.Parameters.AddWithValue("@o1", pertcno.Text);
-            cmd.Parameters.AddWithValue("@o2", peradsoyad.Text);
-            cmd.Parameters.AddWithValue("@o4", pergorev.Text);
-            cmd.Parameters.AddWithValue("@o5", peradres.Text);
-            cmd.Parameters.AddWithValue("@o6", pertelefon.Text);
-            cmd.Parameters.AddWithValue("@o7", pereposta.Text);
-            cmd.Parameters.AddWithValue("@o8", permaas.Text);
-            if (radioButton1.Checked == true)
-            {
-                cmd.Parameters.AddWithValue("@o3", radioButton1.Text);
-            }
-            else if (radioButton2.Checked == true)
-            {
-                cmd.Parameters.AddWithValue("@o3", radioButton2.Text);
-            }
-            Class1.KomutYollaParametreli(sql, cmd);
-            GridDoldur();
-        }
-
-        private void btnguncelle_Click(object sender, EventArgs e)
-        {
-            string sql = "Update personel_bilgileri set per_tcno=@tc, per_adsoyad=@adsoyad, per_cinsiyet=@percins, per_gorev=@gorev, per_adres=@adres,per_telefon=@telefon,per_eposta=@eposta,maas=@maas where per_id='" + textBox1.Text + "'";
-            cmd = new SqlCommand();
-            cmd.Parameters.AddWithValue("@tc", pertcno.Text);
-            cmd.Parameters.AddWithValue("@adsoyad", peradsoyad.Text);
-            cmd.Parameters.AddWithValue("@gorev", pergorev.Text);
-            cmd.Parameters.AddWithValue("@adres", peradres.Text);
-            cmd.Parameters.AddWithValue("@alan", pergorev.Text);
-            cmd.Parameters.AddWithValue("@velitc", peradres.Text);
-            cmd.Parameters.AddWithValue("@telefon", pertelefon.Text);
-            cmd.Parameters.AddWithValue("@eposta", pereposta.Text);
-            cmd.Parameters.AddWithValue("@maas", permaas.Text);
-
-            if (radioButton1.Checked == true)
-            {
-                cmd.Parameters.AddWithValue("@percins", radioButton1.Text);
-            }
-            else
-            {
-                cmd.Parameters.AddWithValue("@percins", radioButton2.Text);
-            }
-            Class1.KomutYollaParametreli(sql, cmd);
-            GridDoldur();
-            MessageBox.Show("Öğrenci Güncellemesi Tamamlandı ");
-        }
         public static string percinsiyet;
-        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             pertcno.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -143,20 +95,7 @@ namespace _2022_2023_gorselodev
             }
         }
 
-        private void btntemizle_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            pertcno.Clear();
-            peradsoyad.Clear();
-            pergorev.Text = "";
-            peradres.Clear();
-            pertelefon.Clear();
-            pereposta.Clear();
-            permaas.Clear();
-
-        }
-
-        private void btnsil_Click(object sender, EventArgs e)
+        private void btnsil_Click_1(object sender, EventArgs e)
         {
             string sql1 = "DELETE FROM personel_bilgileri WHERE per_id=@per_id";
             string parametre = "@per_id";
@@ -167,6 +106,68 @@ namespace _2022_2023_gorselodev
                 Class1.GridView_Delete(id, sql1, parametre);
             }
             Class1.GridDoldur(dataGridView1, sql);
+        }
+
+        private void btnekle_Click_1(object sender, EventArgs e)
+        {
+            string sql = "insert into personel_bilgileri(per_tcno,per_adsoyad,per_cinsiyet,per_gorev,per_adres,per_telefon,per_eposta,maas) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8)";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@o1", pertcno.Text);
+            cmd.Parameters.AddWithValue("@o2", peradsoyad.Text);
+            cmd.Parameters.AddWithValue("@o4", pergorev.Text);
+            cmd.Parameters.AddWithValue("@o5", peradres.Text);
+            cmd.Parameters.AddWithValue("@o6", pertelefon.Text);
+            cmd.Parameters.AddWithValue("@o7", pereposta.Text);
+            cmd.Parameters.AddWithValue("@o8", permaas.Text);
+            if (radioButton1.Checked == true)
+            {
+                cmd.Parameters.AddWithValue("@o3", radioButton1.Text);
+            }
+            else if (radioButton2.Checked == true)
+            {
+                cmd.Parameters.AddWithValue("@o3", radioButton2.Text);
+            }
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+        }
+
+        private void btnguncelle_Click_1(object sender, EventArgs e)
+        {
+            string sql = "Update personel_bilgileri set per_tcno=@tc, per_adsoyad=@adsoyad, per_cinsiyet=@percins, per_gorev=@gorev, per_adres=@adres,per_telefon=@telefon,per_eposta=@eposta,maas=@maas where per_id='" + textBox1.Text + "'";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@tc", pertcno.Text);
+            cmd.Parameters.AddWithValue("@adsoyad", peradsoyad.Text);
+            cmd.Parameters.AddWithValue("@gorev", pergorev.Text);
+            cmd.Parameters.AddWithValue("@adres", peradres.Text);
+            cmd.Parameters.AddWithValue("@alan", pergorev.Text);
+            cmd.Parameters.AddWithValue("@velitc", peradres.Text);
+            cmd.Parameters.AddWithValue("@telefon", pertelefon.Text);
+            cmd.Parameters.AddWithValue("@eposta", pereposta.Text);
+            cmd.Parameters.AddWithValue("@maas", permaas.Text);
+
+            if (radioButton1.Checked == true)
+            {
+                cmd.Parameters.AddWithValue("@percins", radioButton1.Text);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@percins", radioButton2.Text);
+            }
+            Class1.KomutYollaParametreli(sql, cmd);
+            GridDoldur();
+            MessageBox.Show("Öğrenci Güncellemesi Tamamlandı ");
+        }
+
+        private void btntemizle_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            pertcno.Clear();
+            peradsoyad.Clear();
+            pergorev.Text = "";
+            peradres.Clear();
+            pertelefon.Clear();
+            pereposta.Clear();
+            permaas.Clear();
         }
     }
 }

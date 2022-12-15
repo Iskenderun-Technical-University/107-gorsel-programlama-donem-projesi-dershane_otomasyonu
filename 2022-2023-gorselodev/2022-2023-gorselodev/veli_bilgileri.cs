@@ -12,12 +12,14 @@ namespace _2022_2023_gorselodev
 {
     public partial class veli_bilgileri : Form
     {
-        SqlConnection con;
-        SqlDataAdapter da;
-        SqlCommand cmd;
-        DataSet ds;
+        SqlConnection con; // Sql bağlantısı
+        SqlDataAdapter da; // Sql veri alma ve kaydetme 
+        SqlCommand cmd; // veritabanı üzerinde sorgulama, ekleme, güncelleme, silme işlemleri yapar
+        DataSet ds; // veri kaynağını kendisi  ile ilişkilendirmemizi saglayan yapı
         string SqlCon = Class1.SqlCon;
         public static string deger_5 = "";
+
+        // datagridview'e veritabanından veri çekme
         void GridDoldur()
         {
             con = new SqlConnection(SqlCon);
@@ -123,11 +125,8 @@ namespace _2022_2023_gorselodev
             Class1.GridDoldur(dataGridView1, sql);
         }
 
-        private void dataGridView1_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
-
+        
+        // datagridview veri çekme
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int secim = dataGridView1.SelectedCells[0].RowIndex;
@@ -147,5 +146,7 @@ namespace _2022_2023_gorselodev
             string sql = "select * from hesap_bilgileri where ogr_adsoyad like '%";
             Class1.ara(dataGridView1, search3, sql);
         }
+
+
     }
 }
